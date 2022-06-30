@@ -24,7 +24,6 @@ const Pokemon_home = () => {
   return (
     <>
       <h1>You choose {num} value</h1>
-
       <h1>My name is {name}</h1>
       <h1>I have {moves} color</h1>
 
@@ -41,7 +40,6 @@ const Pokemon_home = () => {
         <option value="4">4</option>
       </select>
       <div id="img" className="poki_img">
-
       </div>
     </>
   );
