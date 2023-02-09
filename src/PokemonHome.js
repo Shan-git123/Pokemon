@@ -1,7 +1,7 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Pokemon_home = () => {
+const PokemonHome = () => {
   const [num, setNum] = useState();
   const [name, setName] = useState();
   const [moves, setMoves] = useState();
@@ -11,10 +11,7 @@ const Pokemon_home = () => {
       const res = await axios.get( `https://pokeapi.co/api/v2/pokemon-species/${num}` );
 
       console.log(res);
-      // setNum(()=>{
-
-
-      // });
+      
       setName(res.data.name);
       setMoves(res.data.color.name);
     }
@@ -45,4 +42,4 @@ const Pokemon_home = () => {
   );
 };
 
-export default Pokemon_home;
+export default PokemonHome;
